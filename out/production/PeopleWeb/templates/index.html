@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>People Web</title>
+    <style>
+        body {text-align:center}
+
+    </style>
+</head>
+<body>
+{{#peopleList}}
+<a href="/person?id={{id}}">{{firstName}} {{lastName}}</a><br>
+{{/peopleList}}<br>
+
+{{#prevOffset}}
+<a href="/?offset={{prevOffset}}"><-Prev </a>
+{{/prevOffset}}
+
+{{#nextOffset}}
+<a href="/?offset={{nextOffset}}"> Next-></a>
+{{/nextOffset}}
+
+</body>
+</html>
