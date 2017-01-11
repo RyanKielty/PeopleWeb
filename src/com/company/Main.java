@@ -34,7 +34,7 @@ public class Main {
                     HashMap forPeopleList = new HashMap();
                     forPeopleList.put("peopleList", peopleList);
 
-                    if (offset + 20 <= personData.size()) {
+                    if (offset + 20 < personData.size()) {
                         forPeopleList.put("nextOffset", offset + 20);
                     }
                     if (offset - 20 >= 0) {
